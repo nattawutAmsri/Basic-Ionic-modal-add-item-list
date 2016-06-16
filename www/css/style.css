@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+.shap-btn {
+	width: 80% !important;
+	height: 52px !important;
+	padding: 0 15px !important;
+}
+
+.bgTotal {
+	position: absolute;
+	bottom: -52px;
+}

@@ -1,0 +1,46 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="row" style="text-align: center;">
+      <div class="col4 col-33">
+        <button class="button button-dark shap-btn" ng-click="openModal()">HAIR CUT</button>
+      </div>
+      <div class="col4 col-33">
+        <button class="button button-dark shap-btn" ng-click="openModal()">MAKE HAIR COLOR</button>
+      </div>
+      <div class="col4 col-33">
+        <button class="button button-dark shap-btn" ng-click="openModal()">HAIR SPA</button>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 15px; text-align: center;" >
+       <div class="col4 col-33">
+        <button class="button button-dark shap-btn" ng-click="openModal()">HAIR SALON</button>
+      </div>
+      <div class="col4 col-33">
+        <button class="button button-dark shap-btn" ng-click="openModal()">HAIR PACKAGE</button>
+      </div>
+      <div class="col4 col-33">
+        <button class="button button-dark shap-btn" ng-click="openModal()">OTHER</button>
+      </div>
+   
+
+      </div>
+      <h3>Menu List</h3>
+      <div class="list"  style="padding: 30px;">
+            <div  ng-repeat="item in list" class="item item-button-right">
+              {{item.title}}
+              <button class="button button-positive">
+              {{item.cost}}
+              </button>
+            </div>
+      </div>
+      <hr>
+      <div class="row list bgTotal" style="padding: 0 30px;">
+        <div  class="item item-button-right">
+             Discount 20%
+              <button class="button button-assertive">
+              {{totalCost}}
+              </button>
+            </div>
+      </div>
+  </ion-content>
+</ion-view>
